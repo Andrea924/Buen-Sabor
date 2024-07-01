@@ -15,6 +15,7 @@
 
 body {
     background-color: white;
+    font-family: sans-serif;
 }
 :root{
     --main-color: rgb(214, 6, 6);;
@@ -95,24 +96,24 @@ body {
     max-width: 100%;
     align-items: center;
     position: relative;
-    height: 100vh;
-    display: inline;
-    margin-top: 6rem;
-}
-
-.nosotros::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/fondo-nosotros.png'); /* Usa una imagen de prueba */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1; /* Asegúrate de que el fondo esté detrás del contenido */
+    display: inline;
+    margin-bottom: 10%;
 }
+
+.diagonal {
+    position: absolute;
+    right: 0;
+    top: -3%;
+    width: 60%;
+    height: 103%;
+    background-color: #a5a6a8; /* Color de la parte derecha */
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 0; /* Colocarlo detrás del contenido */
+}
+
+
 .about-us, .mission, .vision {
     display: flex;
     text-align: left;
@@ -153,7 +154,7 @@ body {
 
 .vision .image {
     padding-right: 150px;
-    padding-left: 80px;
+    padding-left: 40px;
 }
 .text {
     flex: 0.5;
@@ -161,15 +162,19 @@ body {
 }
 
 .about-us .text {
-    padding-left: 250px;
+    padding-left: 300px;
+    padding-right: 30px;
+
 }
 
 .mission .text {
     padding-left: 180px;
+    padding-right: 100px;
 }
 
 .vision .text {
-    padding-left: 80px;
+    padding-left: 100px;
+    padding-right: 150px;
 }
 
 .text .p {
@@ -178,6 +183,7 @@ body {
 
 .gallery {
     text-align: center;
+    padding: 30px;
 }
 
 .gallery-images {
@@ -311,5 +317,4 @@ footer {
         margin: 20px 0; /* Margen entre columnas en móviles */
     }
 }
-
 
