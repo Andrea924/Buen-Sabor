@@ -28,17 +28,22 @@
         <section class="contact">
             <div class="contact-form">
                 <h2>Contáctenos</h2>  
-                <form>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"  required>
-                    
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-                    
-                    <input type="text" id="celular" name="celular" placeholder="Célular" required>
-                    
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                <form action="#">
+                    <div class="txt"><label>
+                    <span>Nombre</span>
+                    <input type="text" id="nombre" name="nombre" ></label></div>
+                    <div class="txt"><label>
+                    <span>Apeliidos</span>
+                    <input type="text" id="apellido" name="apellido" required></label></div>
+                    <div class="txt"><label>
+                    <span>Celular</span>
+                    <input type="text" id="celular" name="celular" required></label></div>
+                    <div class="txt"><label>
+                    <span>Email</span>
+                    <input type="email" id="email" name="email" required></label></div>
+                    <div class="txt"><label>
+                    <span>Mensaje</span>
+                    <input id="mensaje" name="mensaje" required></input></label></div>
                     
                     <button type="submit">Enviar</button>
                 </form>
@@ -83,5 +88,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input =>{
+            input.onfocus = ()=>{
+                input.previousElementSibling.classList.add('top');
+                input.previousElementSibling.classList.add('focus');
+                input.parentNode.classList.add('focus');
+            }
+            input.onblur = ()=>{
+                input.value = input.value.trim();
+                if(input.value.trin( ).lengjt == 0 ){
+                input.previousElementSibling.classList.remove('top');
+            }
+                input.previousElementSibling.classList.remove('top');
+                input.parentNode.classList.remove('focus');
+
+            }
+
+        })
+    </script>
 </body>
 </html>
