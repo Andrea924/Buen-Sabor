@@ -16,7 +16,7 @@
             <label for="menu"><img src="./img/menuicon.png" class="menu-icon"></label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="Nosotros.html">Nosotros</a></li>
                     <li><a href="Servicios.html">Servicios</a></li>
                     <li><a href="Contactenos.html">Contáctenos</a></li>
@@ -24,7 +24,7 @@
             </nav>
         </div>
     </header>
-    <main>
+
         
         <section class="nosotros">
             <div class="diagonal"></div>
@@ -34,7 +34,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestiae facilis reprehenderit optio numquam, id incidunt suscipit aliquam quisquam ex, libero voluptatibus quae quas accusamus quaerat nemo asperiores, soluta provident?</p>
                 </div>
                 <div class="image">
-                    <img class="img-about" src="img/img10.jpg" alt="Misión">
+                    <img class="img-about" src="img/img10.jpg" alt="Misión" >
                 </div>
             </div>
             <div class="mission">
@@ -43,7 +43,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus beatae magni cumque, quia quasi possimus. Impedit id quia necessitatibus consectetur. Voluptatum nihil quos ratione molestias doloremque, quidem dolorem optio alias.</p>
                 </div>
                 <div class="image">
-                    <img class="img-about" src="img/img11.jpg" alt="Misión">
+                    <img class="img-about" src="img/img11.jpg" alt="Misión" loading="lazy">
                 </div>
             </div>
             <div class="vision">
@@ -52,23 +52,92 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis vero recusandae ipsam qui ab placeat aut officia, modi atque dignissimos perspiciatis, laborum, fugiat iste aliquid. Ullam, eius similique. Officia.</p>
                 </div>
                 <div class="image">
-                    <img class="img-about" src="img/img12.jpg" alt="Visión">
+                    <img class="img-about" src="img/img12.jpg" alt="Visión" loading="lazy">
                 </div>
             </div>
         </div>
         </section>
         
-        <section>
-            <div class="gallery">
-                <h2>Galería</h2>
-                <div class="gallery-images">
-                    <img src="img/img6.jpg" alt="Galería de imágenes 1">
-                    <img src="img/img7.jpg" alt="Galería de imágenes 2">
-                    <img src="img/img8.jpg" alt="Galería de imágenes 3">
+        <section class="galery">
+            <div class="tabs container">
+                
+                <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+                <label for="tab1">GALERIA</label>
+                <div class="tab">
+                    <div class="swiper mySwiper-2" id="swiper1">
+                        <div class="swiper-wrapper">
+    
+                            <div class="swiper-slide">
+                                <div class="gal">
+                                    <div class="gal">
+                                        <div class="gal-img">
+                                            <img src="img/img7.jpg" alt="">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="gal">
+                                    <div class="gal">
+                                        <div class="gal-img">
+                                            <img src="img/img8.jpg" alt="">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="gal">
+                                    <div class="gal">
+                                        <div class="gal-img">
+                                            <img src="img/img9.jpg" alt="">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="gal">
+                                    <div class="gal">
+                                        <div class="gal-img">
+                                            <img src="img/img10.jpg" alt="">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="gal">
+                                    <div class="gal">
+                                        <div class="gal-img">
+                                            <img src="img/img7.jpg" alt="">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="gal">
+                                    <div class="gal">
+                                        <div class="gal-img">
+                                            <img src="img/img7.jpg" alt="">
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+    
+                    </div>
                 </div>
+    
+    
             </div>
         </section>
-    </main>
+
 
 
     <footer>
@@ -79,7 +148,7 @@
             </div>
             <div class="footer-column">
                 <ul class="menu-footer">
-                    <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="Nosotros.html">Nosotros</a></li>
                     <li><a href="Servicios.html">Servicios</a></li>
                     <li><a href="Contactenos.html">Contáctenos</a></li>
@@ -102,5 +171,11 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/Nosotros.js"></script>
+
 </body>
 </html>
