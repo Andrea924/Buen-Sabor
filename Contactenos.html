@@ -28,27 +28,27 @@
         <section class="contact">
             <div class="contact-form">
                 <h2>Contáctenos</h2>  
-                <form action="#">
+                <form action="send_email.php" method="post">
                     <div class="txt"><label>
                     <span>Nombre</span>
-                    <input type="text" id="nombre" name="nombre" ></label></div>
+                    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]{3,}"></label></div>
                     <div class="txt"><label>
                     <span>Apeliidos</span>
-                    <input type="text" id="apellido" name="apellido" required></label></div>
+                    <input type="text" id="apellido" name="apellido" required pattern="[A-Za-z\s]{3,}"></label></div>
                     <div class="txt"><label>
                     <span>Celular</span>
-                    <input type="text" id="celular" name="celular" required></label></div>
+                    <input type="text" id="celular" name="celular" required pattern="\d{9}"></label></div>
                     <div class="txt"><label>
                     <span>Email</span>
                     <input type="email" id="email" name="email" required></label></div>
                     <div class="txt"><label>
                     <span>Mensaje</span>
-                    <input id="mensaje" name="mensaje" required></input></label></div>
+                    <input id="mensaje" name="mensaje" required minlength="10"></input></label></div>
                     
                     <button type="submit">Enviar</button>
                 </form>
             </div> 
-        </section>
+        </section> 
         <section>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK_HERE" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
