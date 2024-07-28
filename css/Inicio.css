@@ -105,7 +105,7 @@ header {
     display: none;
 }
 
-/* Swiper */
+/* Banner */
 .header-content {
     margin-top: 80px;
     width: 100%;
@@ -395,7 +395,7 @@ footer {
 }
 
 /*Responsive navbar*/
-@media(max-width: 900px) {
+@media(max-width: 780px) {
     .menu {
         padding: 10px;
         justify-content: space-between;
@@ -428,39 +428,166 @@ footer {
     #menu:checked ~ .navbar {
         display: initial;
     }
+   
+    /*Banner responsive*/
+    header {
+        background-size: cover;
+        height: 80vh;
+        padding-bottom: 60%;
+        text-align: center;
+        align-items: center;
+    }
     
     .header-content {
-        padding: 20px;
         margin-top: 100px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
-}
-
-/*Responsive banner*/
-@media screen and (max-width: 768px) {
+    
+    .slider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
     .slider-txt {
-        width: 80%;
-        text-align: center;
-        margin: 0;
-    }
-
-    .slider-txt p {
-        font-size: 1rem;
-    }
-
-    .slider-img {
-        width: 80%;
-        text-align: center;
-    }
-
-    .slider-img img {
-        margin: 0 auto;
+        margin-top: 500px;
         width: 100%;
+        text-align: center;
+        padding: 5%;
+    }
+    
+    .slider-txt p {
+        font-size: 10px;
+    }
+    
+    .slider-logo {
+        text-align: center;
+        display: none;        
+    }
+    
+    .slider-img {
+        display: flex;
+        text-align: center;
+        max-width: 0;
+    }
+    
+    .slider-img img {
+        margin: 5px 0 0 5px;
+        width: 25rem;
+        height: 60vh;
+        object-fit: contain;
+        
+    }
+    
+    /*Nosotros responsive*/
+    .servicio-cont {
+        margin: 5rem;
+    }
+    
+    .servicio-cont .box {
+        padding: 5px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-top: 3rem;
+        border-radius: 0.8rem;
+        justify-content: center; /* Distribuye el espacio entre elementos */
+        margin-bottom: 3rem;   
+    }
+    
+    .servicio-cont .box .box-img{
+        width: 190px;
+        height: 170px;
+        margin-top: -100px;
+        margin-bottom: 1rem;  
     }
 
-}
+    .servicio-cont .box h3{
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: #f2f2f2;
+        text-decoration: underline;
+    }
+    
+    .servicio-cont .box p{
+        font-size: 13px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #bebebe;
+        margin: 20px 30px 50px 30px;
+    }
+    
+    .servicio-cont .box .box-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        object-position: center;
+        border: 3px solid white;
+        display: none; 
 
-/*Responsive footer*/
-@media(max-width: 900px) {
+    }
+    
+    .services-btn {
+        display: flex;
+        justify-content: center; /* Centra el botón dentro del contenedor de servicios */
+        align-items: center;
+        padding-bottom: 7rem;
+    }
+    
+    .services-btn .btn {
+        padding: 7px 16px;
+        border: 2px solid var(--second-color);
+        border-radius: 20px;
+        color: var(--second-color);
+        font-weight: 500;
+        display: inline-block;
+        text-align: center;
+    }
+
+    
+
+
+    /*Servicios responsive*/
+    
+    .heading h2 {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .servicio-cont {
+        margin: 0rem;
+        padding: 0.5rem;
+    }
+    
+    .servicio-cont .box {
+        padding: 30px;
+        margin-top: 0rem;
+        margin-bottom: 0rem;   
+    }
+    
+    .servicio-cont .box .box-img{
+        display: none;
+    }
+    
+    .servicio-cont .box p{
+        font-size: 15px;
+        margin: 20px 20px 20px 20px;
+    }
+    
+    .services-btn {
+        display: flex;
+        justify-content: center; /* Centra el botón dentro del contenedor de servicios */
+        align-items: center;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+    
+    
+    /*Footer responsive*/
     .footer-content {
         flex-direction: column;
         align-items: center;
