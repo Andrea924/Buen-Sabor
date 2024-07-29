@@ -257,18 +257,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 5rem;
+    margin: 7rem;
 }
 
 .servicio-cont .box {
     flex: 1 1 calc(33.333% - 2rem); /* Ajusta el ancho de cada caja */
     background: #464545;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
     border-radius: 0.8rem;
     border: 1px solid;
     justify-content: space-between; /* Distribuye el espacio entre elementos */
@@ -483,69 +482,38 @@ footer {
     }
     
     /*Nosotros responsive*/
-    .servicio-cont {
-        margin: 5rem;
+    .about {
+        padding: 40px;
+        margin: 0%;
     }
     
-    .servicio-cont .box {
-        padding: 5px;
+    .about .container {
         display: flex;
-        text-align: center;
+        justify-content: center;
         align-items: center;
-        margin-top: 3rem;
-        border-radius: 0.8rem;
-        justify-content: center; /* Distribuye el espacio entre elementos */
-        margin-bottom: 3rem;   
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 8px;
     }
     
-    .servicio-cont .box .box-img{
-        width: 190px;
-        height: 170px;
-        margin-top: -100px;
-        margin-bottom: 1rem;  
-    }
-
-    .servicio-cont .box h3{
-        font-size: 20px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        color: #f2f2f2;
-        text-decoration: underline;
-    }
-    
-    .servicio-cont .box p{
-        font-size: 13px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        color: #bebebe;
-        margin: 20px 30px 50px 30px;
-    }
-    
-    .servicio-cont .box .box-img img {
+    .about .content {
+        display: flex;
+        align-items: center;
         width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        object-position: center;
-        border: 3px solid white;
-        display: none; 
-
+        
     }
     
-    .services-btn {
-        display: flex;
-        justify-content: center; /* Centra el botón dentro del contenedor de servicios */
-        align-items: center;
-        padding-bottom: 7rem;
-    }
-    
-    .services-btn .btn {
-        padding: 7px 16px;
-        border: 2px solid var(--second-color);
+    .about .imgnosotros {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0px;
         border-radius: 20px;
-        color: var(--second-color);
-        font-weight: 500;
-        display: inline-block;
+    }
+    
+    .about .text {
         text-align: center;
+        margin-right: 0px; 
     }
 
     
@@ -586,6 +554,9 @@ footer {
         padding-top: 1rem;
     }
     
+    
+
+
     
     /*Footer responsive*/
     .footer-content {
