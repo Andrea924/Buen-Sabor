@@ -372,10 +372,10 @@ footer {
     }
 
     .heading h2 {
-        font-size: 1.5rem;
+        font-size: 30px;
         color: var(--second-color);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 1000;
+        font-weight: 700;
     }
 
     .about {
@@ -385,7 +385,7 @@ footer {
     .about .container {
         display: block;
         max-width: 100%;
-        padding: 10px;
+        padding: 7px;
     }
 
     .about .content {
@@ -399,25 +399,13 @@ footer {
     .about .imgnosotros {
         max-width: 300px;
         margin-right: 0px;
-        border-radius: 0px;
+        border-radius: 20px;
         
     }
 
     .about .text {
         text-align: center;
-        margin-right: 0px; /* Agrega margen a la derecha del texto */
-    }
-
-    .about .text h2 {
-        font-family: "PT Serif", serif;
-        font-weight: 900;
-        padding: 5px;
-    }
-
-    .about .text p {
-        padding: 5px;
-        font-family: "PT Serif", serif;
-        font-weight: 300;
+        margin-right: 0px; /
     }
 
     .about .btn {
@@ -426,7 +414,7 @@ footer {
         border-radius: 20px;
         color: var(--second-color);
         font-weight: 500;
-        margin-top: 10px; /* Ajusta el margen superior del botón */
+        margin: 6px 0px 12px 0px; /* Ajusta el margen superior del botón */
         display: inline-block;
     }
 
